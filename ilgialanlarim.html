@@ -3,46 +3,51 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>İlgi Alanlarım - API</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <title>İlgi Alanlarım</title>
 </head>
 <body>
-    <!-- Navigasyon Menüsü -->
-    <nav>
-        <ul>
-            <li><a href="index.html">Hakkında</a></li>
-            <li><a href="sehrim.html">Şehrim</a></li>
-            <li><a href="mirasimiz.html">Mirasımız</a></li>
-            <li><a href="ilgialanlarim.html">İlgi Alanlarım</a></li>
-        </ul>
-    </nav>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Hakkında</a></li>
+                <li><a href="sehrim.html">Şehrim</a></li>
+                <li><a href="ozgecmis.html">Özgeçmiş</a></li>
+                <li><a href="mirasimiz.html">Mirasımız</a></li>
+                <li><a href="ilgialanlarim.html">İlgi Alanlarım</a></li>
+                <li><a href="iletisim.html">İletişim</a></li>
+                <li><a href="login.html">Giriş Yap</a></li>
+            </ul>
+        </nav>
+   
+        <h1>İlgi Alanlarım</h1>
+
+    </header>
 
     <main>
-        <h1>İlgi Alanlarım & API Entegrasyonu</h1>
-
-        <!-- Film Bölümü -->
-        <section id="film-bolumu">
-            <h2>Haftanın Popüler Filmleri</h2>
-            <div id="film-listesi" style="display: flex; flex-wrap: wrap; gap: 15px;">
-                <p>Filmler yükleniyor...</p>
+        <section id="filmler">
+            <h2>Popüler Filmler</h2>
+            <div id="filmlerCanliTablo">
+                <p>Yükelniyor...</p>
             </div>
         </section>
 
         <hr>
 
-        <!-- Futbol Bölümü -->
-        <section id="futbol-bolumu">
-            <h2>Futbol Puan Durumu / Maçlar</h2>
-            <div id="futbol-verisi">
-                <p>Futbol verileri hazırlanıyor...</p>
+        <section id="futbol">
+            <h2>Futbol SüperLig Puan Tablosu</h2>
+            <div id="futbolCanliPuanTablosu">
+                <p>Yükelniyor...</p>
             </div>
         </section>
     </main>
 
     <footer>
-        <p>&copy; 2026 Obada Aksh - Bilgisayar Mühendisliği</p>
+        <hr>
+        <p>&copy; 2026 Obada Aksh - Bilgisayar Mühendisliği Öğrencisi</p>
     </footer>
 
-    <!-- JavaScript Dosyamızı Bağlıyoruz -->
-    <script src="api-script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
 </body>
 </html>
