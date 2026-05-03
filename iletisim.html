@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <title>İletişim</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Hakkında</a></li>
+                <li><a href="sehrim.html">Şehrim</a></li>
+                <li><a href="ozgecmis.html">Özgeçmiş</a></li>
+                <li><a href="mirasimiz.html">Mirasımız</a></li>
+                <li><a href="ilgialanlarim.html">İlgi Alanlarım</a></li>
+                <li><a href="iletisim.html">İletişim</a></li>
+                <li><a href="login.html">Giriş Yap</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="iletisimFormu">
+            <h2>İletişim Formu</h2>
+
+            <form method="post">
+
+                    <div id="adAlani">
+                        <label for="adSoyad">Ad Soyad:</label>
+                        <input type="text" name="ad"  id="adSoyad" required>
+                    </div>
+
+                    <div id="emailAlani">
+                        <label for="e-posta">e-posta:</label>
+                        <input type="email" name="email" id="e-posta" required>
+                    </div>
+
+                    <div>
+                        <label for="iletisimTel">İletişim No:</label>
+                        <input type="tel" name="iletisim" id="iletisimTel" required>
+                    </div>
+
+                    <br>
+                    
+                    <div id="cinsiyetAlani">
+                        <label>Cinsiyet</label>
+                        <br>
+                        <label for="erkekRadio">Erkek</label>
+                        <input type="radio" name="cinsiyet" value="Erkek" id="erkekRadio" required>
+
+                        <label for="kadinRadio">Kadın</label>
+                        <input type="radio" name="cinsiyet" value="Kadin" id="kadinRadio" required>
+                    </div>
+
+                    <br>
+                    
+                    <div id="ilgialanlariAlani">
+                        <label>İlgi Alanlarım</label>
+                        <br>
+                        <label for="sporCheckbox">Spor</label>
+                        <input type="checkbox" name="spor" id="sporCheckbox">
+
+                        <label for="yazilimCheckbox">Yazılım</label>
+                        <input type="checkbox" name="yazilim" id="yazilimCheckbox">
+
+                        <label for="kitapOkumakCheckbox">Kitap Okumak</label>
+                        <input type="checkbox" name="kitapOkumak" id="kitapOkumakCheckbox">
+                    </div>
+
+                    <br>
+
+                    <div>
+                        <label>Şehir</label>
+                        <select id="sehir" name="Sehir">
+                            <option value="">Seçiniz</option>
+                            <option value="İstanbul">İstanbul</option>
+                            <option value="Sakarya">Sakarya</option>
+                            <option value="Ankara">Ankara</option>
+                            <option value="Gaziantep">Gaziantep</option>
+                            <option value="Samsun">Samsun</option>
+                            <option value="Çanakkale">Çanakkale</option>
+                            <option value="Trabzon">Trabzon</option>
+                            <option value="İzmir">İzmir</option>
+                            <option value="Kocaeli">Kocaeli</option>
+                            <option value="Antalya">Antalya</option>
+                            <option value="Bursa">Bursa</option>
+                        </select>    
+                    </div>
+
+                    <br>
+
+                    <div>
+                        <label for="mesajTextarea">Mesajınız:</label>
+                        <br>
+                        <textarea id="mesajTextarea" name="mesaj" rows="5" cols="40"></textarea>
+                    </div>
+
+                    <div>
+                        <button type="button" onclick="validateNative()">Native JS ile Denetle</button>
+                        <button type="button" id="vueSubmit">Vue.js (Framework) ile Denetle</button>
+                        <input type="reset" value="Formu Temizle">
+                    </div>
+                
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <hr>
+        <p>&copy; 2026 Obada Aksh - Sakarya Üniversitesi Bilgisayar Mühendisliği</p>
+    </footer>
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+    
+</body>
+</html>
