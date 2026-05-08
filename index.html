@@ -3,65 +3,112 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    <title>Hakkında</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+
+    <link rel="stylesheet" href="style.css">
+    
+    <title>Hakkında - Obada Aksh</title>
 </head>
 <body>
     <header>
-        <nav>
-            <ul>
-                <li><a href="index.html">Hakkında</a></li>
-                <li><a href="sehrim.html">Şehrim</a></li>
-                <li><a href="ozgecmis.html">Özgeçmiş</a></li>
-                <li><a href="mirasimiz.html">Mirasımız</a></li>
-                <li><a href="ilgialanlarim.html">İlgi Alanlarım</a></li>
-                <li><a href="iletisim.html">İletişim</a></li>
-                <li><a href="login.html">Giriş Yap</a></li>
-            </ul>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container">
+                <a class="navbar-brand" href="index.html">Obada Aksh</a>
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a href="index.html" class="nav-link">Hakkında</a></li>
+                    <li class="nav-item"><a href="sehrim.html" class="nav-link">Şehrim</a></li>
+                    <li class="nav-item"><a href="ozgecmis.html" class="nav-link">Özgeçmiş</a></li>
+                    <li class="nav-item"><a href="mirasimiz.html" class="nav-link">Mirasımız</a></li>
+                    <li class="nav-item"><a href="ilgialanlarim.html" class="nav-link">İlgi Alanlarım</a></li>
+                    <li class="nav-item"><a href="iletisim.html" class="nav-link">İletişim</a></li>
+                    <li class="nav-item"><a href="login.html" class="nav-link">Giriş Yap</a></li>
+                </ul>
+            </div>
         </nav>
 
     </header>
 
-    <main> 
-        <h1>Obada Aksh - Hakkında</h1>
-        <section id="giris">
-            <h2>Merhaba ben Obada Aksh</h2>
-            <p>Sakarya Üniversitesi, Bilgisayar bölümünde 1. sınıf öğrencisiyim.</p>
-            <figure> 
-                <img src="https://fotograf.sabis.sakarya.edu.tr/Fotograf/256582e3cf65f908eb7538ef0e3cc409" alt="Obada Aksh Profil Fotoğrafı" width="200">
-                <figcaption>Sabis Profil Fotoğrafım</figcaption>
-            </figure>
-        </section>
+    <main>
+        <div class="container mt-5">
+            <h1 class="text-center mb-5">Obada Aksh - Hakkında</h1>
+            <section id="giris" class="mb-5">
+                <div class="row align-items-center">
+                    
+                    <div class="col-md-8">
+                        <h2 class="display-6">Merhaba ben Obada Aksh</h2>
+                        <p class="lead">Sakarya Üniversitesi, Bilgisayar bölümünde 1. sınıf öğrencisiyim.</p>
+                    </div>
 
-        <section id="hobiler">
-            <h3>Hobilerim</h3>
-            <ul>
-                <li>Futbol oynamak</li>
-                <li>Bilgisayar oyunları oynamak</li>
-                <li>Yürüyüş yapmak</li>
-                <li>Basketbol oynamak</li>
-                <li>Yazılım</li>
-            </ul>
-        </section>
+                    <div class="col-md-4 text-center">
+                        <figure class="figure"> 
+                            <img src="https://fotograf.sabis.sakarya.edu.tr/Fotograf/256582e3cf65f908eb7538ef0e3cc409" 
+                            class="figure-img img-fluid rounded shadow"
+                            alt="Obada Aksh Profil Fotoğrafı"
+                            style="max-width: 250px;">
+                            <figcaption class="figure-caption text-center">Sabis Profil Fotoğrafım</figcaption>
+                    </figure>
+                    </div>
+                </div>
+            </section>
 
-        <section id="etkinlikler">
-            <h3>Katıldığım Etkinlikler</h3>
-            <ul>
-                <li>Kızılayda gönüllük yaptım.</li>
-                <li>Ramazanda iftar çadırı gönüllülüğü.</li>
-                <li>Ford Otosan Kariyer ve Gelişim Haftası.</li>
-            </ul>
-        </section>
+            <div class="row mb-5">
+                <div class="col-md-6">
+                    <section id="hobiler" class="card h-100 shadow-sm">
+                        <div class="card-body">
+                            <h3 class="card-title text-primary border-bottom pb-2">Hobilerim</h3>
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item">Futbol oynamak</li>
+                                <li class="list-group-item">Bilgisayar oyunları oynamak</li>
+                                <li class="list-group-item">Yürüyüş yapmak</li>
+                                <li class="list-group-item">Basketbol oynamak</li>
+                                <li class="list-group-item">Yazılım</li>
+                            </ul>
+                        </div>
+                    </section>
+                </div>
 
-        <section id="medya">
-            <h3>Sevdiğim Bir Video</h3>
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/gmBuZYyoE00" title="YouTube video player" frameborder="5" allowfullscreen></iframe>
-        </section>
+                <div class="col-md-6">
+                    <section id="etkinlikler" class="card h-100 shadow-sm">
+                        <div class="card-body">
+                            <h3 class="card-title text-success border-bottom pb-2">Katıldığım Etkinlikler</h3>
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item">Kızılayda gönüllük yaptım.</li>
+                                <li class="list-group-item">Ramazanda iftar çadırı gönüllülüğü.</li>
+                                <li class="list-group-item">Ford Otosan Kariyer ve Gelişim Haftası.</li>
+                            </ul>
+                        </div>
+                    </section>
+                </div>
+            </div>
+
+            <section id="medya" class="text-center mb-5 p-4 bg-light rounded shadow-sm">
+                <h3>Sevdiğim Bir Video</h3>
+                <div class="ratio ratio-16x9 mx-auto" style="max-width: 800px;">
+                    <iframe  id="youtube" width="560" height="315" src="https://www.youtube.com/embed/gmBuZYyoE00" title="YouTube video player" allowfullscreen></iframe>
+                </div>
+            </section>
+        </div> 
     </main>
 
-    <footer>
-        <p>Beni Takip Edin: <a href="https://www.instagram.com/obadaaks11/" target="_blank">Instagram</a></p>
-        <p>Email:<a href="mailto:obada.aksh@ogr.sakarya.edu.tr">Bana E-posta Gönder</a></p>
+    <footer class="bg-dark text-light py-4 mt-5">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-6 text-center text-md-start">
+                    <p class="mb-0">&copy; 2026 Obada Aksh | Sakarya Üniversitesi Bilgisayar Mühendisliği</p>
+                </div>
+                
+                <div class="col-md-6 text-center text-md-end">
+                    <a href="https://www.instagram.com/obadaaks11/" target="_blank" class="text-light me-3 text-decoration-none">
+                        <i class="bi bi-instagram"></i> Instagram
+                    </a>
+                    <a href="mailto:obada.aksh@ogr.sakarya.edu.tr" class="text-light text-decoration-none">
+                        <i class="bi bi-envelope"></i> E-posta Gönder
+                    </a>
+                </div>
+            </div>
+        </div>
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
