@@ -6,30 +6,37 @@
     
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
-
     <link rel="stylesheet" href="style.css">
-    
     <title>Hakkında - Obada Aksh</title>
 </head>
 <body>
     <header>
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
             <div class="container">
+               
                 <a class="navbar-brand" href="index.html">Obada Aksh</a>
-                <ul class="navbar-nav">
-                    <li class="nav-item"><a href="index.html" class="nav-link">Hakkında</a></li>
-                    <li class="nav-item"><a href="sehrim.html" class="nav-link">Şehrim</a></li>
-                    <li class="nav-item"><a href="ozgecmis.html" class="nav-link">Özgeçmiş</a></li>
-                    <li class="nav-item"><a href="mirasimiz.html" class="nav-link">Mirasımız</a></li>
-                    <li class="nav-item"><a href="ilgialanlarim.html" class="nav-link">İlgi Alanlarım</a></li>
-                    <li class="nav-item"><a href="iletisim.html" class="nav-link">İletişim</a></li>
-                    <li class="nav-item"><a href="login.html" class="nav-link">Giriş Yap</a></li>
-                </ul>
+
+                
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+           
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto"> <!-- ms-auto menüyü sağa yaslar -->
+                        <li class="nav-item"><a href="index.html" class="nav-link">Anasayfa</a></li>
+                        <li class="nav-item"><a href="sehrim.html" class="nav-link">Şehrim</a></li>
+                        <li class="nav-item"><a href="ozgecmis.html" class="nav-link">Özgeçmiş</a></li>
+                        <li class="nav-item"><a href="mirasimiz.html" class="nav-link">Mirasımız</a></li>
+                        <li class="nav-item"><a href="ilgialanlarim.html" class="nav-link">İlgi Alanlarım</a></li>
+                        <li class="nav-item"><a href="iletisim.html" class="nav-link">İletişim</a></li>
+                        <li class="nav-item"><a href="login.html" class="nav-link">Giriş Yap</a></li>
+                    </ul>
+                </div>
             </div>
         </nav>
-
     </header>
-
+    
     <main>
         <div class="container mt-5">
             <h1 class="text-center mb-5">Obada Aksh - Hakkında</h1>
@@ -44,9 +51,8 @@
                     <div class="col-md-4 text-center">
                         <figure class="figure"> 
                             <img src="https://fotograf.sabis.sakarya.edu.tr/Fotograf/256582e3cf65f908eb7538ef0e3cc409" 
-                            class="figure-img img-fluid rounded shadow"
-                            alt="Obada Aksh Profil Fotoğrafı"
-                            style="max-width: 250px;">
+                            class="figure-img img-fluid rounded shadow profil-resmi"
+                            alt="Obada Aksh Profil Fotoğrafı">
                             <figcaption class="figure-caption text-center">Sabis Profil Fotoğrafım</figcaption>
                     </figure>
                     </div>
@@ -85,8 +91,8 @@
 
             <section id="medya" class="text-center mb-5 p-4 bg-light rounded shadow-sm">
                 <h3>Sevdiğim Bir Video</h3>
-                <div class="ratio ratio-16x9 mx-auto" style="max-width: 800px;">
-                    <iframe  id="youtube" width="560" height="315" src="https://www.youtube.com/embed/gmBuZYyoE00" title="YouTube video player" allowfullscreen></iframe>
+                <div class="ratio ratio-16x9 mx-auto video-kutusu">
+                    <iframe  id="youtube" src="https://www.youtube.com/embed/gmBuZYyoE00" title="YouTube video player" allowfullscreen></iframe>
                 </div>
             </section>
         </div> 
@@ -112,6 +118,6 @@
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-
+    
 </body>
 </html>

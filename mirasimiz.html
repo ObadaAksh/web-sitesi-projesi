@@ -3,136 +3,140 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    <title>Mirasımız</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Mirasımız - Justinianus Köprüsü</title>
 </head>
 <body>
     <header>
-        <h1>Sakarya'nın Kültürel Mirası</h1>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container">
+                <!-- Marka İsmi -->
+                <a class="navbar-brand" href="index.html">Obada Aksh</a>
 
-        <nav>
-            <ul>
-                <li><a href="index.html">Hakkında</a></li>
-                <li><a href="sehrim.html">Şehrim</a></li>
-                <li><a href="ozgecmis.html">Özgeçmiş</a></li>
-                <li><a href="mirasimiz.html">Mirasımız</a></li>
-                <li><a href="ilgialanlarim.html">İlgi Alanlarım</a></li>
-                <li><a href="iletisim.html">İletişim</a></li>
-                <li><a href="login.html">Giriş Yap</a></li>
-            </ul>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item"><a href="index.html" class="nav-link">Anasayfa</a></li>
+                        <li class="nav-item"><a href="sehrim.html" class="nav-link">Şehrim</a></li>
+                        <li class="nav-item"><a href="ozgecmis.html" class="nav-link">Özgeçmiş</a></li>
+                        <li class="nav-item"><a href="mirasimiz.html" class="nav-link">Mirasımız</a></li>
+                        <li class="nav-item"><a href="ilgialanlarim.html" class="nav-link">İlgi Alanlarım</a></li>
+                        <li class="nav-item"><a href="iletisim.html" class="nav-link">İletişim</a></li>
+                        <li class="nav-item"><a href="login.html" class="nav-link">Giriş Yap</a></li>
+                    </ul>
+                </div>
+            </div>
         </nav>
-
+        <h1 class="text-center mt-5 display-5 fw-bold">Sakarya'nın Kültürel Mirası</h1>
     </header>
 
-
-    <main>
-        <article>
-            <header>     
-                <h2>Justinianus Köprüsü</h2>
+    <main class="container mt-5">
+        <article class="card shadow border-0 p-4 mb-5">
+            <header class="border-bottom mb-4 pb-2">    
+                <h2 class="text-primary h3">Justinianus Köprüsü</h2>
             </header>
-        </article>
-        
-            <ol type="1">
-                <li>
-                    <section id="konum-ve-tarih">
+            
+            <ol class="list-unstyled p-0">
+                <li class="mb-5">
+                    <section id="konum-ve-tarih" class="bg-light p-4 rounded shadow-sm">
+                        <h4 class="h5 fw-bold text-dark mb-3"><i class="bi bi-geo-alt-fill me-2"></i>Konumu ve Tarihi</h4>
+                        <p class="mb-4">Justinianus Köprüsü, Sakarya'nın Serdivan ve Erenler ilçeleri arasında, Sapanca Gölü'nün sularını boşaltan Çark Deresi (antik Melas) üzerinde yer alır.</p>
                         
-                        <h4>Konumu ve Tarihi</h4>
-                        <p>Justinianus Köprüsü, Sakarya'nın Serdivan ve Erenler ilçeleri arasında, Sapanca Gölü'nün sularını boşaltan Çark Deresi (antik Melas) üzerinde yer alır.</p>
-                        
-                        <ul style="list-style-type: disc;">
-                            <li>
-                                <h5>İnşa Süreci:</h5>
-                                <p>Bizans İmparatoru I. Justinianus tarafından MS 558-560 yıllarında inşa edilmiştir.</p>
+                        <ul class="list-group list-group-flush rounded shadow-sm">
+                            <li class="list-group-item">
+                                <h5 class="h6 fw-bold mb-1">İnşa Süreci:</h5>
+                                <p class="mb-0 small">Bizans İmparatoru I. Justinianus tarafından MS 558-560 yıllarında inşa edilmiştir.</p>
                             </li>
-
-                            <li>
-                                <h5>İsim Kökeni:</h5>
-                                <p>Latince "köprü" anlamına gelen Pons kelimesi zamanla Pontogephyra'ya, o da halk arasında yanlış anlaşılarak Pentegephyra (Beşköprü) ismine dönüşmüştür. Aslında köprü 12 kemerlidir.</p>
+                            <li class="list-group-item">
+                                <h5 class="h6 fw-bold mb-1">İsim Kökeni:</h5>
+                                <p class="mb-0 small">Halk arasında Beşköprü olarak bilinir; aslında köprü 12 kemerlidir.</p>
                             </li>
                         </ul>
-                        
                     </section>
                 </li>
 
-                <li>
-                    <section id="yapisi">
-                        <h4>Yapısı</h4>
+                <li class="mb-5">
+                    <section id="yapisi" class="p-2">
+                        <h4 class="h5 fw-bold text-dark border-start border-4 border-primary ps-3 mb-3">Yapısı</h4>
                         <p>Köprü, Erken Bizans döneminin Anadolu'daki en görkemli anıtsal yapılarından biridir.</p>
 
-                        <ul style="list-style-type: disc;">
-                            <li>
-                                <h5>Ölçüler:</h5>
-                                <p>Yaklaşık 375 (bazı kaynaklara göre 430) metre uzunluğunda ve 9,85 metre genişliğindedir.</p>
-                            </li>
-
-                            <li>
-                                <h5>Kemerler:</h5>
-                                <p>Ortada 7 büyük dairesel kemer bulunur; uçlara doğru gidildikçe küçülen toplam 12 kemeri vardır.</p>
-                            </li>
-
-                            <li>
-                                <h5>Malzeme:</h5>
-                                <p>Tamamen kireç taşından inşa edilmiştir.</p>
-                            </li>
-
-                            <li>
-                                <h5>Uç Yapılar:</h5>
-                                <p>Batı ucunda bir zafer takı izi, doğu ucunda ise 11 metre yüksekliğinde dini bir sunak olduğu tahmin edilen bir apsis bulunur.</p>
-                            </li>
+                        <ul class="list-group list-group-flush shadow-sm rounded mt-3">
+                            <li class="list-group-item"><strong>Ölçüler:</strong> Yaklaşık 375 metre uzunluk, 9,85 metre genişlik.</li>
+                            <li class="list-group-item"><strong>Kemerler:</strong> Toplam 12 kemeri bulunmaktadır.</li>
+                            <li class="list-group-item"><strong>Malzeme:</strong> Tamamen kireç taşından inşa edilmiştir.</li>
+                            <li class="list-group-item"><strong>Uç Yapılar:</strong> Batı ucunda zafer takı izi, doğu ucunda dini sunak (apsis) bulunur.</li>
                         </ul>
                     </section>
                 </li>
 
-                <li>
-                    <section id="antik-kanal-projesi">
-                        <h4>Antik Kanal Projesi</h4>
-                        <p>Tarihçiler, Justinianus'un bu köprüyü sadece bir nehir geçişi için değil, aynı zamanda Anadolu'dan Marmara Denizi'ne gemiyle geçmeyi sağlayacak bir kanal projesinin parçası olarak yaptırdığını iddia etmektedir (Plinius ve İmparator arasındaki mektuplaşmalara dayanır). Köprü, bu kanalın üzerindeki en stratejik nokta olarak planlanmıştır.</p>
+                <li class="mb-5">
+                    <section id="antik-kanal-projesi" class="alert alert-info shadow-sm">
+                        <h4 class="h5 fw-bold"><i class="bi bi-info-circle-fill me-2"></i>Antik Kanal Projesi</h4>
+                        <p class="mb-0 small">Tarihçiler, bu köprünün Anadolu'dan Marmara Denizi'ne gemiyle geçmeyi sağlayacak stratejik bir kanal projesinin parçası olduğunu iddia etmektedir.</p>
                     </section>
                 </li>
 
-                <li>
-                    <section id="gunumuzde">
-                        <h4>Günümüzdeki Durumu ve Restorasyon</h4>
-                        <p>Köprü, Sakarya Nehri'nin yatak değiştirerek 3 km doğuya kayması nedeniyle bugün su akmayan bir vadi üzerinde durmaktadır.</p>
+                <li class="mb-4">
+                    <section id="gunumuzde" class="p-2">
+                        <h4 class="h5 fw-bold text-success mb-3"><i class="bi bi-check-circle-fill me-2"></i>Günümüzdeki Durumu</h4>
+                        <p>Bugün su akmayan bir vadi üzerinde duran köprü, modern onarımlar sonrası araç trafiğine kapatılmıştır.</p>
 
-                        <ul style="list-style-type: disc;">
-                            <li>
-                                <h4>UNESCO:</h4>
-                                <p>2018 yılında UNESCO Dünya Mirası Geçici Listesi'ne dahil edilmiştir.</p>
-                            </li>
-
-                            <li>
-                                <h4>Modern Onarım:</h4>
-                                <p>1995 yılında Karayolları tarafından onarılmış ve araç trafiğine kapatılmıştır. Halen restorasyon çalışmaları ve çevresindeki arkeolojik kazılar (hamam, sarnıç buluntuları için) devam etmektedir.</p>
-                            </li>
-                    
-                        </ul>
+                        <div class="card bg-success text-white mt-3 p-3">
+                            <h5 class="h6 fw-bold mb-1">UNESCO Durumu:</h5>
+                            <p class="mb-0 small">2018 yılında UNESCO Dünya Mirası Geçici Listesi'ne dahil edilmiştir.</p>
+                        </div>
                     </section>
                 </li>
             </ol>
-            <a href="https://tr.wikipedia.org/wiki/Justinianus_K%C3%B6pr%C3%BCs%C3%BC" title="Tıklayınız">
-                <img src="https://www.kulturportali.gov.tr/repoKulturPortali/large/27022013/cbbbee3f-0760-4ca8-8da8-2fd265a87cbc.jpg?format=jpg&quality=50" alt="Justinianus Köprüsü" width="600">
-            </a>
 
-            <a href="https://tr.wikipedia.org/wiki/Justinianus_K%C3%B6pr%C3%BCs%C3%BC" title="Tıklayınız">
-                <img src="https://www.kulturportali.gov.tr/repoKulturPortali/large/27022013/d410bbc3-26bf-4b9d-ad64-a8cbff4c6b24.JPG?format=jpg&quality=50" alt="Justinianus Köprüsü" width="600">
-            </a>
+            <div class="row g-3 mt-4">
+                <div class="col-md-4">
+                    <a href="https://tr.wikipedia.org/wiki/Justinianus_K%C3%B6pr%C3%BCs%C3%BC" target="_blank">
+                        <img src="https://www.kulturportali.gov.tr/repoKulturPortali/large/27022013/cbbbee3f-0760-4ca8-8da8-2fd265a87cbc.jpg" class="img-fluid rounded shadow h-100 object-fit-cover" alt="Köprü 1">
+                    </a>
+                </div>
+                <div class="col-md-4">
+                    <a href="https://tr.wikipedia.org/wiki/Justinianus_K%C3%B6pr%C3%BCs%C3%BC" target="_blank">
+                        <img src="https://www.kulturportali.gov.tr/repoKulturPortali/large/27022013/d410bbc3-26bf-4b9d-ad64-a8cbff4c6b24.JPG" class="img-fluid rounded shadow h-100 object-fit-cover" alt="Köprü 2">
+                    </a>
+                </div>
+                <div class="col-md-4">
+                    <a href="https://tr.wikipedia.org/wiki/Justinianus_K%C3%B6pr%C3%BCs%C3%BC" target="_blank">
+                        <img src="https://www.kulturportali.gov.tr/repoKulturPortali/large/27022013/da009cbf-2901-4b2b-895d-41c433d2c103.JPG" class="img-fluid rounded shadow h-100 object-fit-cover" alt="Köprü 3">
+                    </a>
+                </div>
+            </div>
 
-            <a href="https://tr.wikipedia.org/wiki/Justinianus_K%C3%B6pr%C3%BCs%C3%BC" title="Tıklayınız">
-                <img src="https://www.kulturportali.gov.tr/repoKulturPortali/large/27022013/da009cbf-2901-4b2b-895d-41c433d2c103.JPG?format=jpg&quality=50" alt="Justinianus Köprüsü" width="600">
-            </a>
-            <footer>
-                <p>Kaynak: Wikipedia ve Sakarya Kültür Envanteri</p>
+            <footer class="mt-5 border-top pt-3 text-end">
+                <p class="text-muted small italic">Kaynak: Wikipedia ve Sakarya Kültür Envanteri</p>
             </footer>
         </article>
     </main> 
-    <footer>
-        <hr>
-        <p>&copy; 2026 Obada Aksh - Sakarya Üniversitesi Bilgisayar Mühendisliği</p>
+
+    <footer class="bg-dark text-light py-4 mt-5">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-6 text-center text-md-start">
+                    <p class="mb-0">&copy; 2026 Obada Aksh | Sakarya Üniversitesi Bilgisayar Mühendisliği</p>
+                </div>
+                
+                <div class="col-md-6 text-center text-md-end">
+                    <a href="https://www.instagram.com/obadaaks11/" target="_blank" class="text-light me-3 text-decoration-none">
+                        <i class="bi bi-instagram"></i> Instagram
+                    </a>
+                    <a href="mailto:obada.aksh@ogr.sakarya.edu.tr" class="text-light text-decoration-none">
+                        <i class="bi bi-envelope"></i> E-posta Gönder
+                    </a>
+                </div>
+            </div>
+        </div>
     </footer>
-
+    
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-
-
 </body>
 </html>

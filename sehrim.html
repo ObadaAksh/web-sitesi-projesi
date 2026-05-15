@@ -4,91 +4,124 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    <title>Şehrim</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Şehrim - Sakarya</title>
 </head>
 <body>
     <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container">
+                <a class="navbar-brand" href="index.html">Obada Aksh</a>
 
-        <nav>
-            <ul>
-                <li><a href="index.html">Hakkında</a></li>
-                <li><a href="sehrim.html">Şehrim</a></li>
-                <li><a href="ozgecmis.html">Özgeçmiş</a></li>
-                <li><a href="mirasimiz.html">Mirasımız</a></li>
-                <li><a href="ilgialanlarim.html">İlgi Alanlarım</a></li>
-                <li><a href="iletisim.html">İletişim</a></li>
-                <li><a href="login.html">Giriş Yap</a></li>
-            </ul>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto"> 
+                        <li class="nav-item"><a href="index.html" class="nav-link">Anasayfa</a></li>
+                        <li class="nav-item"><a href="sehrim.html" class="nav-link">Şehrim</a></li>
+                        <li class="nav-item"><a href="ozgecmis.html" class="nav-link">Özgeçmiş</a></li>
+                        <li class="nav-item"><a href="mirasimiz.html" class="nav-link">Mirasımız</a></li>
+                        <li class="nav-item"><a href="ilgialanlarim.html" class="nav-link">İlgi Alanlarım</a></li>
+                        <li class="nav-item"><a href="iletisim.html" class="nav-link">İletişim</a></li>
+                        <li class="nav-item"><a href="login.html" class="nav-link">Giriş Yap</a></li>
+                    </ul>
+                </div>
+            </div>
         </nav>
-
-        <h1>SAKARYA</h1>
     </header>
-    <main>
-        <section id="sehriBilgisi">
-            <dl>
-                <dt><strong>Nüfus:</strong></dt>
-                    <dd>Yaklaşık 1.080.000</dd>
-                
-                <dt><strong>Konum</strong></dt>
-                <dd>Marmara Bölgesi'nin kuzeydoğusunda yer alır.</dd>
 
-                <dt><strong>Gezilebilecek Yerler</strong></dt>
-                <dd>Sapanca Gölü, Acarlar Longozu, Taraklı Tarihi Evleri ve Justinianus Köprüsü.</dd>
+    <main class="container mt-5">
+        <h1 class="text-center mb-5 display-4">SAKARYA</h1>
 
-                <dt><strong>Meşhur Yiyecekler</strong></dt>
-                <dd>Islama Köfte ve Kabak Tatlısı.</dd>
-            </dl>
-        </section>
+        <section id="sehriBilgisi" class="card shadow-sm mb-5">
+            <div class="card-body">
+                <h2 class="card-title h3 border-bottom pb-2 mb-4">Şehir Hakkında Genel Bilgiler</h2>
+                <dl class="row">
+                    <dt class="col-sm-3 text-primary">Nüfus:</dt>
+                    <dd class="col-sm-9">Yaklaşık 1.080.000</dd>
 
-        <section id="sliderAlani">
-            <h2>Şehrimden Resimler</h2>
+                    <dt class="col-sm-3 text-primary">Konum:</dt>
+                    <dd class="col-sm-9">Marmara Bölgesi'nin kuzeydoğusunda yer alır.</dd>
 
-            <div class="sliderCercevesi">
-                
-                <figure>
-                <a href="https://tr.wikipedia.org/wiki/Sapanca" target="_blank" title="Sapanca Gölü Hakkında Bilgi Almak İçin Tıklayınız.">
-                    <img src="Sapanca.jpg" alt="Sapanca Gölü" width="600">
-                    </a>
-                    <figcaption>Sapanca Gölü</figcaption>
-                </figure>
+                    <dt class="col-sm-3 text-primary">Gezilecek Yerler:</dt>
+                    <dd class="col-sm-9">Sapanca Gölü, Acarlar Longozu, Taraklı Tarihi Evleri ve Justinianus Köprüsü.</dd>
 
-                <br>
-                
-                <figure>
-                <a href="https://sehirhafizasi.sakarya.edu.tr/sakarya-ormanlari/" target="_blank" title="Sakarya Ormanları Hakkında Bilgi Almak İçin Tıklayınız.">
-                        <img src="Sakarya Ormanları.jpg" alt="Sakarya Ormanları" width="600">
-                    </a>
-                    <figcaption>Sakarya Ormanları</figcaption>
-                </figure>
-                
-                <br>
-
-                <figure>
-                    <a href="https://sakarya.edu.tr/aboutus" target="_blank" title="Sakarya Üniversitesi Hakkında Bilgi Almak İçin Tıklayınız.">
-                        <img src="Sakarya Üniversitesi.jpg" alt="Sakarya Üniversitesi" width="600">
-                    </a>
-                    <figcaption>Sakarya Üniversitesi</figcaption>
-                </figure>
-
-                <br>
-
-                <figure>
-                    <a href="https://tr.wikipedia.org/wiki/Maden_Deresi" target="_blank" title="Maden Deresi Hakkında Bilgi Almak İçin Tıklayınız.">
-                        <img src="Maden Deresi.jpg" alt="Maden Deresi" width="600">
-                    </a>
-                    <figcaption>Maden Deresi</figcaption>
-                </figure>
-
+                    <dt class="col-sm-3 text-primary">Meşhur Yiyecekler:</dt>
+                    <dd class="col-sm-9">Islama Köfte ve Kabak Tatlısı.</dd>
+                </dl>
             </div>
         </section>
-    </main> 
-    
-    <footer>
-        <hr>
-        <p>&copy; 2026 Obada Aksh - Sakarya Üniversitesi Bilgisayar Mühendisliği</p>
+
+        <section id="sliderAlani" class="mb-5">
+            <h2 class="text-center mb-4">Şehrimden Resimler</h2>
+            
+            <div id="sakaryaSlider" class="carousel slide shadow rounded" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <a href="https://tr.wikipedia.org/wiki/Sapanca" target="_blank">
+                            <img src="Sapanca.jpg" class="d-block w-100 slider-resmi" alt="Sapanca Gölü">
+                            <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 rounded">
+                                <h5>Sapanca Gölü</h5>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="carousel-item">
+                        <a href="https://sehirhafizasi.sakarya.edu.tr/sakarya-ormanlari/" target="_blank">
+                            <img src="SakaryaOrmanları.jpg" class="d-block w-100 slider-resmi" alt="Sakarya Ormanları">
+                            <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 rounded">
+                                <h5>Sakarya Ormanları</h5>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="carousel-item">
+                        <a href="https://sakarya.edu.tr/aboutus" target="_blank">
+                            <img src="SakaryaÜniversitesi.jpg" class="d-block w-100 slider-resmi" alt="Sakarya Üniversitesi">
+                            <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 rounded">
+                                <h5>Sakarya Üniversitesi</h5>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="carousel-item">
+                        <a href="https://tr.wikipedia.org/wiki/Maden_Deresi" target="_blank">
+                            <img src="MadenDeresi.jpg" class="d-block w-100 slider-resmi" alt="Maden Deresi">
+                            <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 rounded">
+                                <h5>Maden Deresi</h5>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#sakaryaSlider" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon"></span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#sakaryaSlider" data-bs-slide="next">
+                    <span class="carousel-control-next-icon"></span>
+                </button>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-dark text-light py-4 mt-5">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-6 text-center text-md-start">
+                    <p class="mb-0">&copy; 2026 Obada Aksh | Sakarya Üniversitesi Bilgisayar Mühendisliği</p>
+                </div>
+                
+                <div class="col-md-6 text-center text-md-end">
+                    <a href="https://www.instagram.com/obadaaks11/" target="_blank" class="text-light me-3 text-decoration-none">
+                        <i class="bi bi-instagram"></i> Instagram
+                    </a>
+                    <a href="mailto:obada.aksh@ogr.sakarya.edu.tr" class="text-light text-decoration-none">
+                        <i class="bi bi-envelope"></i> E-posta Gönder
+                    </a>
+                </div>
+            </div>
+        </div>
     </footer>
-
+    
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-
 </body>
 </html>
